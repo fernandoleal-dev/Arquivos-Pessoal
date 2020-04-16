@@ -5,7 +5,7 @@
 
 SELECT '1' codAttributeCustomValue , 
 to_char(
-    case when to_char(TO_DATE('{Formulario.campoData}')  +2,'DY', 'nls_language=''BRAZILIAN PORTUGUESE''') = 'S�B' 
+    case when to_char(TO_DATE('{Formulario.campoData}')  +2,'DY', 'nls_language=''BRAZILIAN PORTUGUESE''') = 'SÁB' 
     then TO_DATE('{Formulario.campoData}') +4 else (
         case when to_char(TO_DATE('{Formulario.campoData}') +2,'DY', 'nls_language=''BRAZILIAN PORTUGUESE''') = 'DOM' 
         then TO_DATE('{Formulario.campoData}') +4 else TO_DATE('{Formulario.data}') +3 
