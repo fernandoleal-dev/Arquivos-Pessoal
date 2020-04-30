@@ -1,0 +1,28 @@
+
+
+{
+"PREFIXO":"{Formulario.prefixo}", 
+"NUMERO":"{Formulario.nDoTitulo}", 
+"PARCELA":"{Formulario.numeroDeParcelas}", //Tem que verificar
+
+"CNPJFORN":"{Formulario.cpfcnpj}", 
+"NATUREZA":"{Formulario.codNatureza}", // // Tem que verificar
+"EMISSAO":"{Formulario.dtEmissao}",
+"VENCIMENTO":"{Formulario.dtVencimento}", 
+"VALOR":"{Formulario.valorTotal}", 
+"HISTORICO":"{Formulario.historico}",
+"IDORQUESTRA": "{Processo.Codigo}",
+"CENTROCUSTO":"{Formulario.centroDeCusto}",
+"TIPO":"BOL",
+"RATEIO":[
+{Formulario.Loop.naturezaRateio} //??
+{"NATUREZA":"{Formulario.naturezaRateio}", // rateioNatureza   ??
+"PERC_NAT":"{Formulario.percRateio}", //natPerc
+"VALOR_NAT":"{Formulario.vlrRateio}",// natPerc
+"CENTRO_DE_CUSTO":"{Formulario.centroDeCustoNaturezaRateio}", //CNE
+ "VALOR_CC":"{Formulario.vlrRateio}"
+}, 
+{/Formulario.Loop.naturezaRateio}
+{}
+]
+}
