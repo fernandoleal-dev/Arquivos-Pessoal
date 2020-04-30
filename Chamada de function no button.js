@@ -1,5 +1,5 @@
 
-// Chamada de function no button que limpa a função
+// Chamada de function no button//
 
 // No layout 
 $('#idDobutton').attr('onclick', '');
