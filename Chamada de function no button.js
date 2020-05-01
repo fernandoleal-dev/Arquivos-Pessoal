@@ -16,5 +16,10 @@ $('#idDobutton').click(function() {
 
 // A function 
 function nomeDaFunction() {
+
+  if (condicional){
+    return false;
+  }
    
+  return true;
 }
