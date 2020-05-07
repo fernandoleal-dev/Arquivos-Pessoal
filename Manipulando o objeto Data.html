@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>Usando o objeto Data</TITLE>
+</HEAD>
+<BODY BGCOLOR=lightgreen>
+<SCRIPT language="Javascript">
+mes = new Array(12);
+mes[0] = "janeiro";
+mes[1] = "fevereiro";
+mes[2] = "março";
+mes[3] = "abril";
+mes[4] = "maio";
+mes[5] = "junho";
+mes[6] = "julho";
+mes[7] = "agosto";
+mes[8] = "setembro";
+mes[9] = "outubro";
+mes[10] = "novembro";
+mes[11] = "dezembro";
+15
+semana = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado");
+var hoje = new Date();
+//Obtém a data de hoje
+var AnoAtual=hoje.getFullYear();
+var MesAtual=hoje.getMonth();
+var DiaAtual=hoje.getDate();
+document.write("<p>Hoje é " + semana[hoje.getDay()] + ",<br>" + DiaAtual+" de " + mes[MesAtual] + " de " + AnoAtual+"</p><hr>");
+// O mes é de 0 a 11
+var AnoNatal=AnoAtual;
+// vejo se ja passou o Natal no ano
+if (MesAtual==11){
+if (DiaAtual>25) {AnoNatal++;}};
+//dado para o proximo Natal!
+var data = new Date(AnoNatal,11,25);
+// Número de segundos por dia
+var nsPorDia = 24*60*60*1000;
+var ndias=(data.getTime()-hoje.getTime()) / nsPorDia;
+ndias = Math.round(ndias);
+natal=new String(" dias <br> para o <br> N A T A L");
+document.write("<center><p>Faltam " + ndias+natal.bold().fontsize("+").italics().fontcolor("red")+" !</center> </p> <hr> ");
+</SCRIPT>
+</BODY>
+</HTML>

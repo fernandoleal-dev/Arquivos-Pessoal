@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+    <TITLE>Métodos de Manipulação de Arrays</TITLE>
+</HEAD>
+<BODY>
+<H3>Métodos de Manipulação de Arrays</H3>
+<SCRIPT LANGUAGE="javascript">
+//exemplificando a inicializacao
+    vetor = new Array(6);
+    vetor[0] = 34;
+    vetor[1] = 23;
+    vetor[2] = 1;
+    vetor[3] = 45;
+    vetor[4] = 9;
+    vetor[5] = 10;
+    Vetor=new Array(34,23,1,45,9,10);
+    var VetorCopy=[34,23,1,45,9,10];
+    var base=1024;
+    var vetorBase=[base, base+1, base+10, base+100, base/2, base%300];
+    document.write("vetor original:");
+    for (i = 0; i < vetor.length; i++){
+        document.write(vetor[i]+" " );}
+//exemplo do metodo
+//array.concat(valores,...)
+    document.write("<br><br>exemplo de " +  "concat(4,300): ");
+    Vetor=Vetor.concat(4,300);
+for (i = 0; i < Vetor.length; i++){
+    document.write(Vetor[i]+" " );}
+//exemplo de array.join(separador);
+    document.write("<br><br>exemplo de " + "join('/'):"+vetor.join(" / "));
+//exemplo do metodo array.pop();
+    document.write("<br><br>exemplo de " + "pop(): ");
+    Vetor.pop();
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" " ); }
+//exemplo de array.push(valor,...);
+    document.write("<br><br>exemplo de " + "push(33,22): ");
+    Vetor.push(33,22);
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" " );}
+    6
+    Vetor.reverse();
+document.write("<br><br>exemplo de " + "reverse: ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" "); }
+    Vetor.shift();
+    document.write("<br><br>exemplo de " + "shift(): ");
+for (i = 0; i < Vetor.length; i++){
+    document.write(Vetor[i]+" "); }
+    Vetor=Vetor.slice(2);
+    document.write("<br><br>exemplo de " + "slice(2): ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" ");}
+    Vetor.sort();
+    document.write("<br><br>exemplo de " + "sort: ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" " ); }
+    function ordemNumerica(a,b){
+        return a-b;}//define uma função
+    Vetor.sort(ordemNumerica);
+    document.write("<br><br>exemplo de " + "sort(ordem): ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" "); }
+    Vetor.splice(4);
+    document.write("<br><br>exemplo de " + "splice(4): ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" "); }
+    Vetor.splice(3,0,999,78);
+    document.write("<br><br>exemplo de " + "splice(3,0,999,78): ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" "); }
+    Vetor.unshift(53,80,7);
+    document.write("<br><br>exemplo de " + "unshift(53,80,7): ");
+for (i = 0; i < Vetor.length; i++){ 
+    document.write(Vetor[i]+" "); }
+    Vetor.toString();
+    document.write("<br><br>exemplo de " + "toString(): "+Vetor);
+</SCRIPT>
+</BODY>
+</HTML>

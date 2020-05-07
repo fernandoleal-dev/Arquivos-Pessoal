@@ -9,7 +9,3 @@ $('inp:idDoCampo').attr("tabindex","-1");
 $('inp:idDoCampo').css('pointer-events', 'auto');
 $('inp:idDoCampo').prop('readonly', false);
 $('inp:idDoCampo').attr("tabindex","1");
-
-
-
-

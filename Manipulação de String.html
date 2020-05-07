@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>Exemplificando os métodos de
+anipulação de strings</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="javascript">
+texto = "O Ivo viu a uva";
+document.write('<h2>Na string "' + texto + '" tem-se:</h2>');
+document.write('Tamanho = ' + texto.length + '<br>');
+document.write('anchor()= ' + texto.anchor("inicio") + '<br>');
+document.write('big()= ' + texto.big() + '<br>');
+document.write('blink()= ' + texto.blink() + '<br>');
+document.write('bold()= ' + texto.bold() + '<br>');
+document.write('charAt (10) = "' + texto.charAt(3) + '"<br>');
+document.write('charAt (20) = "' + texto.charAt(20) + '"<br>');
+document.write('charCodeAt (10) = "' + texto.charCodeAt(10) + '"<br>');
+document.write('concat(" verde ", "para"," vinho!") = "' + texto.concat(" verde"," para", "vinho!") + '"<br>');
+document.write('fixed() = "' + texto.fixed() + '"<br>');
+document.write('fontcolor("red") = "' + texto.fontcolor("red") + '"<br>');
+document.write('fontsize(5) = ' + texto.fontsize(5) + '"<br>');
+var s=String.fromCharCode(101,108,97);
+document.write('fromCharCode(101,108,97)="' + s + '"<br>');
+document.write('indexOf ("viu") = ' + texto.indexOf("viu") + "<br>");
+document.write('italics() = ' + texto.italics() + "<br>");
+document.write('lastIndexOf ("u") = ' + texto.lastIndexOf("u") + "<br>");
+document.write('link()= ' + texto.link("#inicio") + '<br>');
+document.write('replace("uva","Eva")= ' + texto.replace("uva","Eva") + '<br>');
+document.write('search("uva")= ' + texto.search("uva") + '<br>');
+//document.write('slice(3,10)= ' + 10 texto.slice(2,10) + '<br>');
+document.write('small() = ' + texto.small() + "<br>");
+document.write('split(" ")= ' + texto.split(" ") + '<br>');
+document.write('strike() = ' + texto.strike() + "<br>");
+document.write('sub() = ' + texto.sub() + "<br>");
+document.write('substr (6, 5) = "'+ texto.substr(6, 5) + '"<br>');
+document.write('substring (6, 11) = "'+ texto.substring(6, 11) + '"<br>');
+document.write('sup() = ' + texto.sup() + "<br>");
+document.write('toLowerCase () = "' + texto.toLowerCase() + '"<br>');
+document.write('toUpperCase () = "' + texto.toUpperCase() + '"<br>');
+document.write('texto = "' + texto + '"<br></b>');
+</SCRIPT>
+</BODY>

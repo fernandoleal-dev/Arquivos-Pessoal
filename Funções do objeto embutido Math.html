@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Exemplo de constantes matematicas</title>
+<script language="JavaScript">
+    function criaTabela(){
+    document.write("<table border=15 bgcolor=white>");
+    document.write("<tr align=center height=110>");
+    document.write("<th>Expressao</th>");
+    document.write("<th>Valor</th>");
+    document.write("</tr>");
+    }
+    function fechaTabela(){ 
+    document.write("</table>"); }
+</script>
+</head>
+<body bgcolor=darkseagreen>
+    <h1>Exemplo de funcoes matematicas</h1>
+       <hr>
+    <table width=100%>
+    <tr align=center>
+        <td>
+            <h2>Potencias</h2>
+<script language="JavaScript">
+    10
+    criaTabela();
+    text="3";
+    for (lin = 1; lin < 10; lin++){
+    document.write("<tr align=center>\n");
+    document.write("<td>",lin," elevado a 3 = ",lin,text.sup(),"</td>");
+    document.write("<td>", Math.pow(lin,3), "</td>");
+    document.write("\n</tr>\n");
+    }
+    fechaTabela();
+
+</script>
+    </td>
+    <td>
+    <h2>Raizes</h2>
+<script language="JavaScript">
+
+    criaTabela();
+    var num;
+    for (lin = 1; lin <10; lin++){
+    num=Math.pow(lin,3)
+    document.write("<tr height=100 align=left>\n");
+    document.write("<td>Raiz 3 de ",num," =</td>");
+    document.write("<td align=center>", Math.round(Math.pow(num,1/3)), "</td>");
+    document.write("\n</tr>\n");
+    }
+    fechaTabela();
+    
+</script>
+</td>
+</tr>
+</table>
+</body>
+</html>
