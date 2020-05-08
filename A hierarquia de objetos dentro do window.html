@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>Exemplo de Hierarquia</TITLE>
+</HEAD>
+<BODY bgcolor=white>
+<CENTER><IMG SRC="seuemb.gif"></CENTER>
+<FORM>
+<TABLE>
+<TR>
+<TD>Nome:</TD>
+<TD><INPUT TYPE=TEXT NAME="nome" SIZE=40 VALUE="Fulano Sicrano"></TD></TR>
+<TR>
+<TD>E-mail:</TD>
+<TD><INPUT TYPE=TEXT SIZE=40 VALUE= "fulano@qualquer.coisa.br"></TD></TR>
+<TR>
+<TD>Href do link:</TD>
+<TD><INPUT TYPE=TEXT SIZE=40></TD></TR>
+<TR>
+<TD>Src da imagem:</TD>
+<TD><INPUT TYPE=TEXT SIZE=40></TD></TR>
+</TABLE>
+<BR><INPUT TYPE=BUTTON Name=botao Value="Pressione">
+</FORM>
+<CENTER>
+<IMG SRC="0.gif" height=6>
+<P><A HREF="http://www.faperj.br">outros links</A></P>
+</CENTER>
+<SCRIPT LANGUAGE="javascript">
+document.forms[0].elements[2].value = document.links[0].href;
+4
+document.forms[0].elements[3].value = document.images[0].src;
+document.write("O nome que aparece" + "no campo nome do formulário é " +
+document.forms[0].elements[1].value);
+texto = prompt("Qual texto deve " + "aparecer no botão ? ");
+document.forms[0].elements[4].value = texto;
+</SCRIPT>
+</BODY>
+</HTML>
