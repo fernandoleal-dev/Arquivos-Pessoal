@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Criando Cookie simples</title>
+</head>
+<body bgcolor="tan">
+<SCRIPT language="Javascript">
+
+document.writeln('<B>Valor anterior de ', 'document.cookie = </B>"', document.cookie, '"<p>');
+// Inclui um valor
+document.cookie = "produto=modelo12";
+document.writeln('<B>Valor de ', 'document.cookie agora = </B>"', document.cookie, '"<p>');
+// Inclui mais um valor
+document.cookie = "usuario=maria";
+document.writeln('<B>Valor de ', 'document.cookie recém ', 'modificado= </B>"', document.cookie, '"<p>');
+// Apaga o primeiro valor
+document.cookie = "produto=modelo34";
+document.writeln('<B>Valor de ', 'document.cookie depois ultima ', 'mudanca= </B>"', document.cookie, '"<p>');
+
+</SCRIPT>
+</body>
+</html>

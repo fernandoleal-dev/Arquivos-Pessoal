@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Critica de campo</title>
+<script language="javascript">
+
+//Retorna se o valor for numerico
+function EhDigito(car)
+{
+return((car >= "0") && (car <= "9"));
+}
+//Verifica se o telefone está correto
+function VerificaTelefone(campo)
+{
+var telef = campo.value;
+for (i = 0; i < telef.length; i++)
+4
+if (! EhDigito (telef.charAt(i)))
+{
+alert("Caracter "+telef.charAt(i)+
+" inválido:deve ser numero!");
+campo.focus();
+return false;
+}
+return true;
+}
+//-->
+</script>
+</head>
+<body bgcolor=navy text=yellow>
+<form>
+<H2>Critica de campo</H2>
+<TABLE>
+<TR>
+<TD>Nome:</TD>
+<TD><INPUT TYPE="text" NAME="nome" VALUE=""></TD>
+</TR>
+<TR>
+<TD>Telefone:</TD>
+<TD><INPUT TYPE="text" NAME="telefone" VALUE="" onChange= "VerificaTelefone(this)"></TD>
+</TR>
+</TABLE>
+<P>
+<input type="button" value="Enviar">
+<input type="reset" value="Apagar">
+</P>
+</form>
+</body>
+</html>
